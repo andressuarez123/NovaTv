@@ -50,5 +50,8 @@ class UserSeeder extends Seeder
         
       //  for($i=0; )
 
+            user::factory(10)->create();
+            
+
     }
 }
