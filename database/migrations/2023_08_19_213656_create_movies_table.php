@@ -24,10 +24,16 @@ return new class extends Migration
             $table->string('download_link');
 
             $table->unsignedBigInteger('category_id');
-            $table->foreign('category_id')->references('id')->on('categories');
+            $table->foreign('category_id')->references('id')->on('categories')
+                                                         ->onUpdate('cascade')
+                                                        ->onDelete('cascade');
+
 
             $table->unsignedBigInteger('role_id');
-            $table->foreign('role_id')->references('id')->on('roles');
+            $table->foreign('role_id')->references('id')->on('roles')
+                                                        ->onUpdate('cascade')
+                                                        ->onDelete('cascade');
+
 
             $table->timestamps();
         });
