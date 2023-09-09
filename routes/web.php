@@ -21,3 +21,7 @@ Route::get('/', function () {
 route::get('/test/{name}',[App\Http\Controllers\Testcontroller::class,'test']);
 route::get('/user/{id}',[App\Http\Controllers\Testcontroller::class,'findUser']);
 
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
