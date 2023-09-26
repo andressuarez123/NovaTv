@@ -1,22 +1,47 @@
 .bg-novatv{
+    background-color: #1F618D;
 
-    background-color: #2980B9;
 }
 
-.bg-novatv{
-
-    background-color: #2980B9;
+.btn-novatv{
+    background-color: #1F618D;
     color: white;
 }
-.bg-novatv{
 
-    background-color: #2980B9;
-    color: rgb(255, 255, 255,0.415);
-
+.btn-novatv:hover{
+    background-color: #1F618D;
+    color: rgba(245, 245, 245, 0.351);
 }
-.bg-novatv{
 
-    background-color: #2980B9;
+.card-header-novatv{
+    background-color: #1F618D;
     color: white;
-    padding: 1rem orem 0.5rem 0rem;
+    padding: 1rem 0rem 0.5rem 0rem;
+}
+
+.img-top-card{
+    margin: 0px auto;
+}
+
+.navbar-brand{
+    font-size: 0.8rem;
+}
+
+h1{
+    color: #1F618D;
+}
+
+ul.pagination{
+    justify-content: center;
+}
+
+
+ul.pagination .page-item.active .page-link{
+    background-color: #1F618D;
+    border-color: #336180;
+    color: rgba(255, 255, 255, 0.595);
+}
+
+ul.pagination .page-item .page-link{
+    color: #336180;
 }

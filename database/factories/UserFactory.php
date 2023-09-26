@@ -19,7 +19,9 @@ class UserFactory extends Factory
     {
         return [
             'fullname' => fake()->name(),
+            'birthdate' => fake()->date(),
             'email' => fake()->unique()->safeEmail(),
+            'fullname' => fake()->name(),
             'email_verified_at' => now(),
             'phone'=> fake() -> phoneNumber(),
             'photo'=> fake() -> imageUrl($width = 640, $height = 480),
