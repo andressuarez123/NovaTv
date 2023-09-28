@@ -31,3 +31,10 @@ route::get('/user/{id}',[App\Http\Controllers\Testcontroller::class,'findUser'])
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+
+  Route::resources([
+    'users'=> UserController::class,
+   // 'categories'=> CategoryController::class,
+    //'movies'=> CategoryController::class,
+]);

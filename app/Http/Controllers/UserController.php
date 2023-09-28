@@ -6,8 +6,13 @@ use Illuminate\Http\Request;
 use App\Models\User;
 use App\Models\Role;
 
-class UserControler extends Controller
-{
+class UserController extends Controller
+{   
+    public function __construct() 
+    {
+        $this->middleware('auth');
+    }
+
     /**
      * obtener todos los elementos y retorna la vista para su visualizacion.
      */
