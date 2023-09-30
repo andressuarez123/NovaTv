@@ -18,8 +18,10 @@ class UserController extends Controller
      */
     public function index()
     {
-        $users= User::all();
-        dd($users);
+        //$users= User::all();
+        $users = User::paginate(10);
+        
+        return view ('elemets.users.index')->with('users',$users);
     }
 
     //retorna la vista  con el formulario para poder crear un usuario 

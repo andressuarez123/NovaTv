@@ -21,7 +21,7 @@
                     <div class= "card text-center" >
                     <img src="{{ asset('images/elemts/users.svg') }}" alt="users"  width="200px" class=" my-2 img-top-card">
                     <div class= 'card-body'>
-                       <a href="#" class= " btn  btn-primary btn-block" style="background-color:#2980B9 ">
+                       <a href="#" class= "{{ route (users.index)}}" style="background-color:#2980B9 ">
                        <i class= "fa fa-users ">
                            modulo Usuarios 
                        </i>
